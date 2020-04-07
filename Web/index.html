@@ -1,0 +1,114 @@
+
+<!--  W E B    P R À C T I Q U E S  -->
+
+<!-- Institu Cristòfol Despuig -->
+<!-- Auth: Joan Marc Maldonado -->
+<!-- www.github__________      -->
+
+<!-- Aquesta pàgina pot carregarse per apache2, creant un virtualhost al port 83
+     i generant un htpasswd per loguejar com a "admin" "password"  -->
+
+<!-- També pot migrar-se al domini web del centre -->
+
+<!-- La finalitat es sumar una pràctica més a l'empresa i que els futurs 
+     equips d'alumnes de pràctiques, tinguin a la seva disposició un 
+     website on puguin ser orientats fàcilment i tinguin a la seva 
+     disposició les eines i documentació, així com protocols 
+     a realitzar i de fàcil accés. Així com també a les aplicacions
+     web usades amb més freqüència, com el Drive, GMail, qBID, etc -->
+
+<!-- Aquesta web no té cap tipus de llicència ni autoria. És completament
+     OpenSource -->
+
+<!-- <pre><code>Example code block</code></pre> -->
+
+<!-- Índex Plantilla -->
+
+
+<!DOCTYPE html>
+<html lang="es" 
+      dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pràctiques</title>
+<!-- La carrega de scripts i links va en cascada, no olvidar al afegir-ne. -->
+<!-- La fulla d'estils propia anirà al final sempre. -->
+<!-- Si algo no carrega adequadament, la posició a la cascada està malament
+     s'haurà d'escalar posició. -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" 
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+          crossorigin="anonymous">     
+    <link rel="stylesheet" 
+          href="style.css">    
+  </head>
+<!-- Cos -->
+  <body>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+<!-- SideBar Esquerra -->
+<!-- Incloure URL dintre de href="" per redirigir -->
+<!-- FA,FAS,FAR,FAB ICONS: https://fontawesome.com/v4.7.0/icons/ -->
+<!-- Canviar la classe per el codi especificat per icon a la web  -->
+<!-- ( Alguns no són compatibles per versió de navegador ) -->
+  <div class="sidebar">
+    <header>MENÚ</header>
+  <ul>
+    <li><a href="index.html"><i class="fas fa-home"></i>Inici</a></li>
+    <li><a href="protmat.html"><i class="fas fa-qrcode"></i>Protocol de matí</a></li>
+    <li><a href="form.html"><i class="fas fa-calendar" aria-hidden="true"></i>Registre horari</a></li>
+    <li><a href="#"><i class="fas fa-book"></i>Wiki</a></li>
+    <li><a href="https://www.test-velocidad.com/" target="_blank"><i class="fas fa-podcast"></i>Test de Velocitat</a></li>
+    <li><a href="#"><i class="far fa-question-circle"></i>FAQ's</a></li>
+    <li><a href="#"><i class="fa fa-sliders-h"></i>Manuals d'ús</a></li>
+    <li><a href="#"><i class="fa fa-arrow-down" aria-hidden="true"></i>Descàrregues</a></li>
+ 
+    </li>
+  </ul>
+
+  <br>
+
+  <!-- Links a Moodle, qBID, Drive, Gmail -->
+
+  <ul class="navega">
+    <li><a class="sitelogo" href="https://www.google.com/intl/es_ALL/drive/" target="_blank">
+      <img src="fotos/drive.png"> Google Drive</a> 
+    </li>
+
+    <li><a class="sitelogo" href="https://accounts.google.com" target="_blank">
+      <img src="fotos/Mail.png" width="35" height="32"> Gmail</a> 
+    </li>
+
+    <li><a class="sitelogo" href="https://www.empresaiformacio.org/sBid" target="_blank">
+      <img width="35" height="32" 
+           src="fotos/sBID.png"> qBID</a>
+    </li>
+
+    <li><a class="sitelogo" href="https://mainkivi.info/index.php/P%C3%A0gina_principal" target="_blank">
+      <img width="35" height="32"
+           src="fotos/Kivi.png"> Mainkivi</a> 
+    </li>
+  </ul>
+</div>
+
+<section>
+  <div class="jumbotron jumbotron-fluid">
+    <a class="contacta" href="https://vinkula.com">Contacta</a>
+    <a class="logoins">
+    <img width="250" height="80" src="fotos/despuig.jpg"></a>
+    <div class="container">
+      <h1>Àrea de Pràctiques</h1>
+      <p>Departament d'Informàtica</p>
+  </div>
+  </div>
+</section>
+</div>
+
+  </body>
+</html>

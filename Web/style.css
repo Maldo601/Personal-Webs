@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.sidebar {
+  margin-top: -25px;
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #042331;
+  transition: all .5s ease;
+}
+.sidebar header {
+  font-size: 22px;
+  font-style: bold;
+  
+  color: rgb(255, 196, 0);
+  line-height: 70px;
+  text-align: center;
+  position: block;
+  background: rgb(8, 8, 112);
+  user-select: none;
+}
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+  color: rgba(255, 255, 255, 1) !important;
+  box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+  transition: all 0.2s ease;
+  border-radius: 40px;
+}
+.sidebar ul a i{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  background: #042331;
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn{
+  left: 40px;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all .5s;
+}
+label #cancel{
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel{
+  left: 195px;
+}
+#check:checked ~ section{
+  margin-left: 250px;
+}
+section {
+  background: url(bg.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all .5s;
+}
+
+
+/* BOOTSTRAP JUMBOTRON */
+
+.jumbotron {
+  margin-top: -50px;
+  background-color: antiquewhite;
+  color: black;
+}
+
+
+
+/* DRIVE - GMAIL - MOODLE */ 
+.navega {
+  
+
+  display: block;
+  padding-right: 0.5em;
+  color: azure;
+  box-sizing: border-box;
+  
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+/* Botó contacte */
+.contacta {
+  float:  right;
+  margin-top: 60px;
+  margin-left: -100px;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #d1961667;
+  border-radius: 30px;
+  margin-right: -10px;
+  
+  
+
+}
+
+/* LOGO DESPUIG */
+
+.logoins {
+  float: right;
+  margin-top: -40px;
+
+}
+
+
+/* PROTOCOL DE MATI */
+
+.secprot {
+
+  background: rgb(255, 255, 255);
+  margin-top: -25px;
+ 
+}
+
+/* FORMULARI I HORARI */
+
+

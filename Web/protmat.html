@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es" 
+      dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pràctiques</title>
+<!-- La carrega de scripts i links va en cascada, no olvidar al afegir-ne. -->
+<!-- La fulla d'estils propia anirà al final sempre. -->
+<!-- Si algo no carrega adequadament, la posició a la cascada està malament
+     s'haurà d'escalar posició. -->
+
+
+<!-- LINK I META DE LA PAGINA DE INICI-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" 
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+          crossorigin="anonymous"> 
+          
+          <link href="/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<!-- LINK I META DE LA PAGINA DEL PROTOCOL DE MATI-->
+          <!-- Favicons -->
+      <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+      <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+      <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+      <link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
+      <link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+      <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
+      <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
+      <meta name="theme-color" content="#563d7c">
+      
+      
+          <style>
+            .bd-placeholder-img {
+              font-size: 1.125rem;
+              text-anchor: middle;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+            }
+      
+            @media (min-width: 768px) {
+              .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+              }
+            }
+          </style>
+          <!-- Custom styles for this template -->
+          <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+          <!-- Custom styles for this template -->
+          <link href="blog.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" 
+          href="style.css">    
+  </head>
+<!-- Cos -->
+  <body>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+<!-- SideBar Esquerra -->
+<!-- Incloure URL dintre de href="" per redirigir -->
+<!-- FA,FAS,FAR,FAB ICONS: https://fontawesome.com/v4.7.0/icons/ -->
+<!-- Canviar la classe per el codi especificat per icon a la web  -->
+<!-- ( Alguns no són compatibles per versió de navegador ) -->
+  <div class="sidebar">
+    <header>MENÚ</header>
+  <ul>
+    <li><a href="index.html"><i class="fas fa-home"></i>Inici</a></li>
+    <li><a href="protmat.html"><i class="fas fa-qrcode"></i>Protocol de matí</a></li>
+    <li><a href="form.html"><i class="fas fa-calendar" aria-hidden="true"></i>Registre horari</a></li>
+    <li><a href="#"><i class="fas fa-book"></i>Wiki</a></li>
+    <li><a href="https://www.test-velocidad.com/" target="_blank"><i class="fas fa-podcast"></i>Test de Velocitat</a></li>
+    <li><a href="#"><i class="far fa-question-circle"></i>FAQ's</a></li>
+    <li><a href="#"><i class="fa fa-sliders-h"></i>Manuals d'ús</a></li>
+    <li><a href="#"><i class="fa fa-arrow-down" aria-hidden="true"></i>Descàrregues</a></li>
+    </li>
+  </ul>
+
+  <br>
+
+  <!-- Links a Moodle, qBID, Drive, Gmail -->
+
+  <ul class="navega">
+    <li><a class="sitelogo" href="https://www.google.com/intl/es_ALL/drive/" target="_blank">
+      <img src="fotos/drive.png"> Google Drive</a> 
+    </li>
+
+    <li><a class="sitelogo" href="https://accounts.google.com" target="_blank">
+      <img src="fotos/Mail.png" width="35" height="32"> Gmail</a> 
+    </li>
+
+    <li><a class="sitelogo" href="https://www.empresaiformacio.org/sBid" target="_blank">
+      <img width="35" height="32" 
+           src="fotos/sBID.png"> qBID</a>
+    </li>
+
+    <li><a class="sitelogo" href="https://mainkivi.info/index.php/P%C3%A0gina_principal" target="_blank">
+      <img width="35" height="32"
+           src="fotos/Kivi.png"> Mainkivi</a> 
+    </li>
+  </ul>
+</div>
+
+<!-- BOOTSTRAP BLOGG -->
+
+<section class="secprot"> <!-- EL SECPROOT I LA SECTION NO ES TOQUEN ! -->
+  <div class="container">
+   
+  
+     
+    <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+      <div class="col-md-6 px-0">
+        <h1 class="display-4 font-italic">El Protocol de matí</h1>
+        <p class="lead my-3">Cada matí al arribar a pràctiques, s'ha de realitzar el protocol.
+                             En aquesta pàgina trobaràs tots els passos i procediments per 
+                             realitzar-lo. </p>       
+      </div>
+    </div>
+  
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Potser t'interesa...</strong>
+            <h3 class="mb-0">Accés a aules en horari lectiu</h3>
+            
+            <p class="card-text mb-auto">Com actuar a l'entrar a un aula on es dona classe.</p>
+            <a href="#" class="stretched-link">Continua llegint...</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <a class="loprofe">
+              <img width="250" height="230" src="fotos/loprofe.png"></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Potser t'interessa...</strong>
+            <h3 class="mb-0">Detecció de problemes</h3>
+           
+            <p class="mb-auto">Esbrina que fer quan hi hagi una fallada al protocol.</p>
+            <a href="#" class="stretched-link">Continua llegint...</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <a class="loprofe">
+            <img width="250" height="230" src="fotos/problemes.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <main role="main" class="container">
+    <div class="row">
+      <div class="col-md-8 blog-main">
+        <h3 class="pb-4 mb-4 font-italic border-bottom">
+          Sobre el Protocol...
+        </h3>
+  
+        <div class="blog-post">
+          <h2 class="blog-post-title">1. Ping's a les IP's principals del centre</h2>
+          <p class="blog-post-meta">Març 6, 2020 by <a href="#">Maldo</a></p>
+  
+          <p> Obviament per realitzar els pings ho farem vía terminal, no obstant haurem de comprovar la .239 vía Web també.</p>
+          <hr>
+          <p> Aquestes són les IP's on s'ha de fer ping: ( Poden ampliar-se en el futur )</p>
+          <blockquote>
+            <img width="510" height="70" src="fotos/ping1.png"></a>
+            <blockquote>
+            <img width="510" height="60" src="fotos/ping2.png"></a>
+          </blockquote>
+         
+
+          <h2 class="blog-post-title">2. La Sala de Professors</h2>
+          <p class="blog-post-meta">Març 6, 2020 by <a href="#">Maldo</a></p>
+          <p>Normalment una vegada haguem signat i agafat les claus, podem dirigir-nos a la Sala de Professors on revisarem els següents equips:</p>
+          
+          <b>1. </b><em> Els ordinadors de repositori estaran operatius.</em><br>
+          <b>2. </b><em> Els portàtils estaran tots al Rack.</em><br>
+          <b>3. </b><em> Les impresores i la Konika estaran funcionant correctament.</em><br>
+          <b>4. </b> Els equips dels professors estaran operatius i llestos per al seu funcionament.<em></em><br>
+          <br>
+          <h2 class="blog-post-title">3. Firmes dels Professors</h2>
+          <p class="blog-post-meta">Març 6, 2020 by <a href="#">Maldo</a></p>
+          <p> Per portar un control sobre els ordinadors i els seus usos, els professors destinats a l'aula de Tecnologia i Informàtica, hauran de signar
+              a un document la seva estància a l'aula, conforme els han fet servir ell i els seus alumnes. Nosaltres ens encarregarem de matí, de revisar les signes
+              i al final del dia també.
+          </p>
+          <p> Si es dona el cas que un professor no ha signat, s'ha de comunicar al Cap de Departament, Andreu Bonet, la incidència. Qui personalment s'encarregarà 
+              de pendre les mesures adients.
+          </p>
+          <h2 class="blog-post-title">4. Test de Velocitat</h2>
+          <p class="blog-post-meta">Març 6, 2020 by <a href="#">Maldo</a></p>
+          
+          
+          <p> El Test de Velocitat l'utilitzarem per medir i anotar al protocol la velocitat de muntada i baixada a la que el nostre centre treballa durant el matí.
+              Podem trobar un link directe al menú de la pàgina web on ens dirigirà al que fem servir nosaltres, ja que es molt fiable. Li farem una captura de pantalla
+              amb el "shutter" o una altra eina de captura de pantalla i ho muntarem a la carpeta corresponent del Drive.
+              <br>
+              <br>
+              
+              ( <em> Tenim pendent incloure una muntada directa de la imatge a la pàgina i que la coloqui a la carpeta del drive directament. </em>)
+          </p>
+
+
+        </div><!-- /.blog-post -->
+  
+        <div class="blog-post">
+          <h2 class="blog-post-title">5. Còpies de Seguretat</h2>
+          <p class="blog-post-meta">Març 6, 2020 by <a href="#">Maldo</a></p> 
+          <p> Normalment una vegada al mes haurem de fer còpies de seguretat del servidor, no obstant d'això se n'encarrega el tècnic Kike. La nostra labor
+              en aquest cas, serà realitzar copies de seguretat de les clonacions del nostre disc dur de ISOS o del propi sistema. Tanmateix també serà interessant 
+              portar un seguiment i anotar la data de revisió al full de protocol. 
+          </p>
+        </div><!-- /.blog-post -->
+  
+        <div class="blog-post">
+          <h2 class="blog-post-title">6. Revisió dels Racks</h2>
+          <p class="blog-post-meta">Març 6, 2020 by <a href="#">Maldo</a></p> 
+          <p> Dos dies a la setmana, normalment dilluns i divendres, haurem de passar per les aules on vam implementar racks amb ordinadors portàtils, a fi d'assegurar-nos que 
+              no hi hagin carregadors amb mal estat, que falti algun ordinador sense datar la seva sortida del rack, que els endolls temporitzadors funcionin correctament, etc. 
+              Evidentment haurem de deixar constància al protocol, el qual té una columna amb 5 números per encerclar els que s'han revisat correctament i no presenten una incidència.
+              En cas d'haverla, ho comunicarem al Cap de Departament d'Informàtica, Andreu Bonet. 
+          </p>
+        </div><!-- /.blog-post -->
+  
+        <nav class="blog-pagination">
+          <a class="btn btn-outline-primary" href="protmat.html">Ves a l'inici</a>
+          
+        </nav>
+  
+      </div><!-- /.blog-main -->
+  
+      <aside class="col-md-4 blog-sidebar">
+        <div class="p-4">
+          <h4 class="font-italic">Índex de Contingut</h4>
+          <ol class="list-unstyled mb-0">
+            <li><a href="#">1. Ping's a les IP's</a></li>
+            <li><a href="#">2. La Sala de Professors</a></li>
+            <li><a href="#">3. Firmes dels Professors</a></li>
+            <li><a href="#">4. El Test de Velocitat </a></li>
+            <li><a href="#">5. Copies de Seguretat</a></li>
+            <li><a href="#">6. Revisió dels Racks</a></li>
+          </ol>
+        </div>
+        <div class="p-4 mb-3 bg-light rounded">
+          <h4 class="font-italic">Recorda...</h4>
+          <p class="mb-0"> <em>Forma part del protocol també, signar cada matí a l'hora corresponent, així com a la sortida. 
+                           Les claus que se'ns facin entrega, queden baix la nostra propia responsabilitat.</em>
+          </p>
+        </div> 
+        <div class="p-4">
+          <h4 class="font-italic">Eines</h4>
+          <ol class="list-unstyled">
+            <li><a href="#">Imprimeix un Protocol</a></li>
+            <li><a href="#">Executa l'Script de Ping's</a></li>
+            <li><a href="#">Formulari d'assistència</a></li>
+          </ol>
+        </div>
+      </aside><!-- /.blog-sidebar -->  
+    </div><!-- /.row --> 
+  </main><!-- /.container --> 
+</section>
+</div>
+</body>
+</html>
